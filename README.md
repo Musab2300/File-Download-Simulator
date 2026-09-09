@@ -1,51 +1,38 @@
 # 📥 File Download Simulator
 
-Java Swing kullanılarak geliştirilen, birden fazla dosyanın aynı anda indiriliyormuş gibi simüle edildiği bir masaüstü uygulamasıdır.
+Java Swing kullanılarak geliştirilen, birden fazla dosyanın aynı anda indirilmesini simüle eden bir masaüstü uygulamasıdır.
 
-Bu proje; `Thread`, `Swing Timer`, `JProgressBar` ve Swing bileşenleri kullanılarak çoklu indirme işlemlerinin nasıl yönetilebileceğini öğrenmek ve uygulamak amacıyla geliştirilmiştir.
+Bu proje; Java Swing, multithreading, `JProgressBar` ve dinamik arayüz bileşenleri kullanılarak çoklu indirme işlemlerinin nasıl yönetilebileceğini öğrenmek ve uygulamak amacıyla geliştirilmiştir.
 
 ## ✨ Özellikler
 
 - Birden fazla dosyanın aynı anda indirilmesinin simüle edilmesi
 - Her indirme işlemi için ayrı ilerleme çubuğu
-- Her dosyanın bağımsız indirme sürecine sahip olması
-- İndirme durumunun anlık olarak gösterilmesi
+- Bağımsız indirme işlemleri
 - Dinamik olarak indirme panellerinin oluşturulması
 - Dosya boyutlarının rastgele belirlenmesi
-- İndirilen miktarın MB cinsinden gösterilmesi
-- İndirme tamamlandığında durum bilgisinin güncellenmesi
+- İndirme ilerlemesinin MB cinsinden gösterilmesi
+- İndirme durumunun anlık olarak gösterilmesi
 - Basit ve kullanışlı Swing arayüzü
 
 ## 🛠️ Kullanılan Teknolojiler
 
 - Java
 - Java Swing
-- Thread
-- Swing Timer
+- Multithreading
 - JProgressBar
-- JPanel
-- JFrame
+- BorderLayout
+- BoxLayout
+- GridLayout
 
-## 🎯 Projenin Amacı
+## 📂 Proje Yapısı
 
-Bu projenin temel amacı, Java Swing kullanarak çoklu görev ve animasyon benzeri süreçlerin nasıl yönetilebileceğini öğrenmektir.
-
-Özellikle aşağıdaki konularda pratik yapılmıştır:
-
-- Thread kullanımı
-- Birden fazla işlemin bağımsız şekilde çalıştırılması
-- Swing bileşenlerinin dinamik olarak oluşturulması
-- Progress bar kullanımı
-- GUI üzerinde anlık durum güncellemeleri
-- Nesne tabanlı programlama yaklaşımı
-
-## ⚙️ Çalışma Mantığı
-
-Uygulama başlatıldığında kullanıcıya indirilebilecek dosyalar sunulur.
-
-Bir dosya seçildiğinde o dosya için yeni bir indirme paneli oluşturulur. Her indirme işlemi kendi sürecine sahip olacak şekilde çalışır ve ilerleme durumu ilgili `JProgressBar` üzerinden gösterilir.
-
-Birden fazla dosya seçildiğinde indirmeler birbirinden bağımsız olarak ilerleyebilir.
+```text
+src/
+├── Main.java
+├── MainFrame.java
+└── DownloadPanel.java
+```
 
 ## 📸 Screenshot
 
@@ -53,7 +40,47 @@ Birden fazla dosya seçildiğinde indirmeler birbirinden bağımsız olarak iler
 
 ## 🚀 Çalıştırma
 
-Projeyi bilgisayarınıza klonlayın:
+1. Projeyi klonlayın:
 
 ```bash
 git clone https://github.com/Musab2300/File-Download-Simulator.git
+```
+
+2. Projeyi IntelliJ IDEA veya tercih ettiğiniz Java IDE'si ile açın.
+
+3. `Main.java` sınıfını çalıştırın.
+
+## 🎯 Projenin Amacı
+
+Bu proje, Java Swing ve çoklu iş parçacığı kullanımı konusunda pratik yapmak amacıyla geliştirilmiştir.
+
+Özellikle aşağıdaki konular üzerinde çalışılmıştır:
+
+- Java Swing ile GUI geliştirme
+- Multithreading
+- Birden fazla işlemin bağımsız olarak yürütülmesi
+- Dinamik Swing bileşenlerinin oluşturulması
+- Progress bar kullanımı
+- GUI üzerinde anlık durum güncellemeleri
+- Event handling
+- Layout yöneticilerinin kullanımı
+
+## 📚 Öğrenilen Konular
+
+Bu proje sırasında özellikle aşağıdaki Java konuları üzerinde çalışılmıştır:
+
+- `JFrame`
+- `JPanel`
+- `JProgressBar`
+- `Thread`
+- Dinamik panel oluşturma
+- Layout yönetimi
+- GUI bileşenlerinin güncellenmesi
+- Çoklu indirme simülasyonu
+- Nesne tabanlı programlama
+
+## 👨‍💻 Geliştirici
+
+**Muhammed Musab Ayaz**
+
+GitHub: [Musab2300](https://github.com/Musab2300)
